@@ -27,7 +27,7 @@
       .heading{
         border-bottom: 3px solid #bcccdc;
         border-width: 1px;
-        
+        margin-bottom: 0px;
       }
 
       .checkbox-round {
@@ -52,7 +52,7 @@
 
       }
       main {
-        margin-top: 60px;
+        margin-top: 40px;
       }
 
       #content {
@@ -68,18 +68,6 @@
         margin-bottom: 0px;
       }
 
-      .taskTemplate {
-        display: none;
-      }
-
-      .taskTemplate label {
-        display: flex;
-        
-      }
-
-      .taskTemplate span {
-        margin-left: 10px;
-      }
       
       #completedTaskList .content {
         color: grey;
@@ -110,7 +98,7 @@
             
             <ul id="taskList" class="list-unstyled text-light">
               <div class="taskTemplate " class="checkbox d-flex" style="display: none">
-                <label class="m-4 text-dark align-items-center items" style="width:450px;height:50px;border-radius: 5px;background-color: #bcccdc;">
+                <label class="m-2 text-dark align-items-center items" style="width:450px;height:50px;border-radius: 5px;background-color: #bcccdc;">
                   <input type="checkbox " class="checkbox-round mt-3 ml-2" />
                   <span class="content h5 mt-3">Task content goes here...</span>
                   <!-- <button class="bg-danger align-right text-light float-right ml-auto mr-1" style="border-radius: 5px;border-color: white;float: right;">Remove</button> -->
