@@ -2,6 +2,8 @@
 
 This project is a decentralized To-Do List application built on the Ethereum blockchain. It allows users to create tasks and mark them as done. The tasks are stored on the blockchain, ensuring immutability and transparency.
 
+![project_image](https://github.com/Himani2615/Ethereum-TODO/assets/143219485/7e46731e-d208-4bc0-9734-85c708ba86e9)
+
 
 
 ## Table of Contents
@@ -47,7 +49,7 @@ Before you begin, ensure you have the following installed:
 1. **Clone the repository**
     ```sh
     git clone https://github.com/chiragmalik2612/ethereum-todo-list.git
-    cd ethereum-todo-list
+    cd eth-todo-list
     ```
 
 2. **Install dependencies**
