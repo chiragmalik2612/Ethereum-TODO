@@ -14,6 +14,7 @@
     <script src="app.js"></script>
     
     <style>
+      
       .heading{
         margin-bottom: 0;
       }
@@ -35,7 +36,6 @@
     background-color: gray;
 }
       body{
-        background-color: #102a43;
         background-image: url("glowing-molecular-structure-futuristic-galaxy-backdrop-generated-by-ai.jpg");
         background-size: cover;
       }
@@ -80,7 +80,7 @@
   </head>
   <br>
   <body>
-    
+    <div class="TodoContainer">
     <nav class="navbar navbar-dark fixed-top flex-md-nowrap p-0 shadow" style="background-color: #031220;">
       <a class="navbar-brand col-sm-3 col-md-2 mr-0  fw-bold" href="#" target="_blank"> 🎲Ethereum- Todo List</a>
       
@@ -95,25 +95,23 @@
       <div class="row">
         <main role="main" class="col-lg-12 d-flex justify-content-center" >
           <div id="loader" class="text-center">
-            <p class="text-center">Loading...</p>
+            <p class="text-center"></p>
           </div>
           <div id="content ">
             
             <ul id="taskList" class="list-unstyled text-light">
               <div class="taskTemplate " class="checkbox d-flex" style="display: none">
                 <label class=" text-dark align-items-center " style="width:450px;height:50px;border-radius: 5px;background-color: #bcccdc;">
-                  <input type="checkbox " class="checkbox-round mt-3 ml-2" />
-                  <span class="content h5 mt-3">Task content goes here...</span>
+                  <input type="checkbox " class="checkbox mt-1 ml-2" style="width:4% ; height:15px; cursor: pointer;" value=""/>
+                  <span class="content h5 mt-1">Task content goes here...</span>
                   <!-- <button class="bg-danger align-right text-light float-right ml-auto mr-1" style="border-radius: 5px;border-color: white;float: right;">Remove</button> -->
                 </label>
               </div>
             </ul>
             <ul id="completedTaskList" class="list-unstyled">
             </ul>
-            
-            
-<button type="button" class="btn btn-primary ml-3" data-toggle="modal" data-target="#exampleModal">
-  + Add Task
+<button type="button" class="btn btn-warning ml-3" data-toggle="modal" data-target="#exampleModal">
+ Add Task
 </button>
 
 <!-- Modal -->
@@ -147,13 +145,14 @@
         </main>
       </div>
     </div>
-    <footer class="bg-body-tertiary text-center text-lg-start ">
+    <footer class="bg-body-tertiary text-center text-lg-start" style="margin-top: 3rem;" >
       <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05); color: white;">
+      <div class="text-center p-1" style="background-color: rgba(9, 9, 9, 0.751); color: white; width: 30vw; margin: auto;">
         © 2024 Copyright:
         Project by <a href="https://www.linkedin.com/in/himani-singh-23b237289/">Himani</a> and <a href="https://www.linkedin.com/in/chirag-malik-63ba44282/">Chirag</a>.
             </div>
       <!-- Copyright -->
     </footer>
+  </div>
   </body>
 </html>
