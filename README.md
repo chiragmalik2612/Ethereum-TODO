@@ -1,6 +1,9 @@
-#Ethereum To-Do List
+##Ethereum To-Do List
 
 This project is a decentralized To-Do List application built on the Ethereum blockchain. It allows users to create tasks and mark them as done. The tasks are stored on the blockchain, ensuring immutability and transparency.
+
+![project_image](https://github.com/Himani2615/Ethereum-TODO/assets/143219485/75856521-e2a4-4e7a-a574-577c8d971f5e)
+
 
 ## Table of Contents
 
@@ -16,6 +19,7 @@ This project is a decentralized To-Do List application built on the Ethereum blo
 ## Introduction
 
 This is a simple DApp (Decentralized Application) that lets you manage a to-do list on the Ethereum blockchain. It demonstrates basic blockchain and smart contract principles using Solidity, with a web interface for interaction.
+
 
 ## Features
 
@@ -60,12 +64,12 @@ Before you begin, ensure you have the following installed:
 4. **Migrate the smart contract to the blockchain**
     Make sure Ganache is running, then:
     ```sh
-    truffle migrate
+    truffle migrate --reset
     ```
 
 5. **Start the development server**
     ```sh
-    npm start
+    npm run dev
     ```
 
 ## Usage
@@ -94,7 +98,7 @@ Contributions are welcome! Please follow these steps to contribute:
 
 3. **Create a new branch for your feature**
     ```sh
-    git checkout -b feature/AmazingFeature
+    git checkout -b <branchname>
     ```
 
 4. **Make your changes and commit them**
