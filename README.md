@@ -2,7 +2,9 @@
 
 This project is a decentralized To-Do List application built on the Ethereum blockchain. It allows users to create tasks and mark them as done. The tasks are stored on the blockchain, ensuring immutability and transparency.
 
-![project_image](https://github.com/Himani2615/Ethereum-TODO/assets/143219485/7e46731e-d208-4bc0-9734-85c708ba86e9)
+
+https://github.com/chiragmalik2612/Ethereum-TODO/assets/150550493/1857a83e-8c06-45f2-9885-27072ecc70da
+
 
 
 
@@ -15,7 +17,6 @@ This project is a decentralized To-Do List application built on the Ethereum blo
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
@@ -25,15 +26,22 @@ This is a simple DApp (Decentralized Application) that lets you manage a to-do l
 ## Features
 
 - Create new tasks
+- list tasks
 - Mark tasks as done
 
 ## Technologies Used
 
 - Solidity
-- Ethereum
-- Truffle
+- Ethereum Blockchain
 - Web3.js
+- Truffle
+- Metamask
+- nodejs
 - Ganache (for local development)
+- javascript
+- HTML
+- CSS
+
 
 ## Prerequisites
 
@@ -117,6 +125,4 @@ Contributions are welcome! Please follow these steps to contribute:
 6. **Open a pull request**
     Go to the original repository on GitHub and open a pull request with a description of your changes.
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
