@@ -14,8 +14,34 @@
     <script src="app.js"></script>
     
     <style>
+      .heading{
+        border-bottom: 3px solid #bcccdc;
+        border-width: 1px;
+      }
+
+      .checkbox-round {
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 2px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.checkbox-round:checked {
+    background-color: gray;
+}
+      body{
+        background-color: #102a43;
+        background-image: url("glowing-molecular-structure-futuristic-galaxy-backdrop-generated-by-ai.jpg");
+
+      }
       main {
-        margin-top: 60px;
+        margin-top: 40px;
       }
 
       #content {
@@ -27,49 +53,109 @@
         margin-bottom: 10px;
       }
 
-      ul {
-        margin-bottom: 0px;
+      .taskTemplate {
+        display: none;
       }
 
+      .taskTemplate label {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        background-color: #bcccdc;
+        padding: 10px;
+      }
+
+      .taskTemplate span {
+        margin-left: 10px;
+      }
+
+      
       #completedTaskList .content {
         color: grey;
         text-decoration: line-through;
       }
     </style>
   </head>
+  <br>
   <body>
-    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#" target="_blank"> 🎲Ethereum- Todo List</a>
-      <ul class="navbar-nav px-3">
-        <li class="nav-item text-nowrap d-none d-sm-none d-sm-block">
+    
+    <nav class="navbar navbar-dark fixed-top flex-md-nowrap p-0 shadow" style="background-color: #bcccdc;">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0 text-dark fw-bold" href="#" target="_blank"> 🎲Ethereum- Todo List</a>
+      
+      <ul class="navbar-nav px-3 text-dark">
+        <li class="nav-item text-nowrap d-none d-sm-none d-sm-block text-dark">
           <small><a class="nav-link" href="#"><span id="account"></span></a></small>
         </li>
       </ul>
     </nav>
-    <div class="container-fluid">
+    <div class="mt-5 text-center text-light fw-bold heading" ><h1>My Tasks</h1></div>
+    <div class="container-fluid ">
       <div class="row">
-        <main role="main" class="col-lg-12 d-flex justify-content-center">
+        <main role="main" class="col-lg-12 d-flex justify-content-center" >
           <div id="loader" class="text-center">
             <p class="text-center">Loading...</p>
           </div>
-          <div id="content">
-            <form onSubmit="App.createTask(); return false;">
-                <input id="newTask" type="text" class="form-control" placeholder="Add task..." required>
-                <input type="submit" hidden="">
-              </form>
-            <ul id="taskList" class="list-unstyled">
-              <div class="taskTemplate" class="checkbox" style="display: none">
-                <label>
-                  <input type="checkbox" />
-                  <span class="content">Task content goes here...</span>
+          <div id="content ">
+            
+            <ul id="taskList" class="list-unstyled text-light">
+              <div class="taskTemplate " class="checkbox d-flex" style="display: none">
+                <label class=" text-dark align-items-center " style="width:450px;height:50px;border-radius: 5px;background-color: #bcccdc;">
+                  <input type="checkbox " class="checkbox-round mt-3 ml-2" />
+                  <span class="content h5 mt-3">Task content goes here...</span>
+                  <!-- <button class="bg-danger align-right text-light float-right ml-auto mr-1" style="border-radius: 5px;border-color: white;float: right;">Remove</button> -->
                 </label>
               </div>
             </ul>
             <ul id="completedTaskList" class="list-unstyled">
             </ul>
+            
+            
+<button type="button" class="btn btn-primary ml-3" data-toggle="modal" data-target="#exampleModal">
+  + Add Task
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+  <div class="modal-dialog modal-dialog-centered" role="document" >
+    <div class="modal-content" style="background-color: #bcccdc;">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Task</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form onSubmit="App.createTask(); return false;">
+          <input id="newTask" type="text" class="form-control" placeholder="Add task..." required>
+          
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <input type="submit" class="btn btn-primary"></input>
+      </div>
+    </div>
+    
+    </form>
+    </div>
+  </div>
+</div>
+
+
           </div>
         </main>
       </div>
     </div>
+    <div style="height: 338px;"></div>
+    <footer class="bg-body-tertiary text-center text-lg-start " style="background-color: #bcccdc">
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2024 Copyright:
+        Project by <a href="https://www.linkedin.com/in/himani-singh-23b237289/">Himani</a> and <a href="https://www.linkedin.com/in/chirag-malik-63ba44282/">Chirag</a>.
+            </div>
+      <!-- Copyright -->
+    </footer>
   </body>
 </html>
