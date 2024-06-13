@@ -1,8 +1,7 @@
-##Ethereum To-Do List
+## Ethereum To-Do List
 
 This project is a decentralized To-Do List application built on the Ethereum blockchain. It allows users to create tasks and mark them as done. The tasks are stored on the blockchain, ensuring immutability and transparency.
 
-![project_image](https://github.com/Himani2615/Ethereum-TODO/assets/143219485/75856521-e2a4-4e7a-a574-577c8d971f5e)
 
 
 ## Table of Contents
@@ -74,10 +73,10 @@ Before you begin, ensure you have the following installed:
 
 ## Usage
 
-1. **Connect to MetaMask**
+1. **Connect to MetaMask:**
     Open your web browser and connect MetaMask to the local blockchain provided by Ganache.
 
-2. **Interact with the To-Do List**
+2. **Interact with the To-Do List:**
     Open `http://localhost:3000` in your browser. You can now add tasks and mark them as done. All changes will be recorded on the Ethereum blockchain.
 
 
@@ -109,7 +108,8 @@ Contributions are welcome! Please follow these steps to contribute:
 
 5. **Push to your forked repository**
     ```sh
-    git push origin feature/AmazingFeature
+    git push origin <branchname>
+
     ```
 
 6. **Open a pull request**
