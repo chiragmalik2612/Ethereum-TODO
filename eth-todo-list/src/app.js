@@ -110,7 +110,7 @@ App = {
   createTask: async () => {
     App.setLoading(true);
     const content = $("#newTask").val();
-    await App.todoList.createTask(content, { from: App.account, gas: 200000 });
+    await App.todoList.createTask(content, { from: App.account, gas: 100000 });
     window.location.reload();
   },
 
